@@ -2,18 +2,10 @@ var Eta = Eta || {};
 
 Eta.styledMapType = new google.maps.StyledMapType([
     {
-        "elementType": "geometry",
+        "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#212121"
-            }
-        ]
-    },
-    {
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
+                "color": "#cdcdcd"
             }
         ]
     },
@@ -21,7 +13,7 @@ Eta.styledMapType = new google.maps.StyledMapType([
         "elementType": "labels.text.fill",
         "stylers": [
             {
-                "color": "#757575"
+                "color": "#000000"
             }
         ]
     },
@@ -29,31 +21,12 @@ Eta.styledMapType = new google.maps.StyledMapType([
         "elementType": "labels.text.stroke",
         "stylers": [
             {
-                "color": "#212121"
+                "color": "#ffffff"
             }
         ]
     },
     {
-        "featureType": "administrative",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#757575"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.country",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#9e9e9e"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.land_parcel",
-        "elementType": "labels",
+        "featureType": "poi.business",
         "stylers": [
             {
                 "visibility": "off"
@@ -61,16 +34,7 @@ Eta.styledMapType = new google.maps.StyledMapType([
         ]
     },
     {
-        "featureType": "administrative.locality",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#bdbdbd"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
+        "featureType": "poi.park",
         "elementType": "labels.text",
         "stylers": [
             {
@@ -79,116 +43,38 @@ Eta.styledMapType = new google.maps.StyledMapType([
         ]
     },
     {
-        "featureType": "poi",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#757575"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#181818"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#616161"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "color": "#1b1b1b"
-            }
-        ]
-    },
-    {
         "featureType": "road",
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#2c2c2c"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#8a8a8a"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#373737"
+                "color": "#ffffff"
             }
         ]
     },
     {
         "featureType": "road.highway",
-        "elementType": "geometry",
+        "elementType": "geometry.stroke",
         "stylers": [
             {
-                "color": "#3c3c3c"
+                "color": "#7d7d7d"
+            },
+            {
+                "weight": 1
             }
         ]
     },
     {
-        "featureType": "road.highway.controlled_access",
-        "elementType": "geometry",
+        "featureType": "road.highway",
+        "elementType": "labels.icon",
         "stylers": [
             {
-                "color": "#4e4e4e"
+                "visibility": "on"
             }
         ]
     },
     {
-        "featureType": "road.local",
-        "elementType": "labels",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
+        "featureType": "road.highway",
         "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#616161"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#757575"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "geometry",
         "stylers": [
             {
                 "color": "#000000"
@@ -196,12 +82,30 @@ Eta.styledMapType = new google.maps.StyledMapType([
         ]
     },
     {
-        "featureType": "water",
-        "elementType": "labels.text.fill",
+        "featureType": "road.local",
+        "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#3d3d3d"
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#003046"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "color": "#ffffff"
             }
         ]
     }
-], {name: "B&W"});
+], {name: "Contrast"});

@@ -46,7 +46,7 @@ $(document).ready( function() {
 	});
 
 	Eta.map.mapTypes.set("styled_map", Eta.styledMapType);
-	Eta.map.setMapTypeId("roadmap");
+	Eta.map.setMapTypeId("styled_map");
 
 	if (localStorage.destinationAddress) {
 		$("#address").val(localStorage.destinationAddress);
