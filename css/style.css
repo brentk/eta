@@ -1,0 +1,89 @@
+.spacer {
+	margin: 6px 0 6px 0;
+}
+
+body {
+	text-align: center;
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.9);
+	z-index: 5;
+	height: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+#overlay i {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	color: white;
+}
+
+#calc-it {
+	display: block;
+}
+
+#send-it {
+	display: none;
+}
+
+#map {
+	font-size: 4em;
+	color: black;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 200;
+	left: 0;
+}
+
+#map i {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: red;
+}
+
+#form-container {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 182px;
+	margin: 18px;
+}
+
+#calc-submit {
+	margin-top: 4px;
+	font-size: 2.5em;
+	height: 100px;
+	width: 100%;
+}
+
+#eta {
+	margin: 12px 0 12px 0;
+}
+
+#back-button {
+	margin-top: 4px;
+	font-size: 1.5em;
+	height: 100px;
+	width: 49%;
+}
+
+#send-submit {
+	margin-top: 4px;
+	font-size: 1.5em;
+	height: 100px;
+	width: 49%;
+}

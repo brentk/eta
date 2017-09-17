@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<link rel="apple-touch-icon" href="/images/clock-whitebg.png">
+		<link rel=icon href="/images/clock-transparentbg.png" sizes="any" type="image/png">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+		<script src="//unpkg.com/jquery"></script>
+		<script src="//unpkg.com/moment"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyD6oiuDarZZzSMC_HhrzC9HcEOXPUBB1oo"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha256-+4KHeBj6I8jAKAU8xXRMXXlH+sqCvVCoK5GAFkmb+2I=" crossorigin="anonymous"></script>
+
+		<link href="/css/style.css" rel="stylesheet"></script>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></script>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></script>
+
+		<script src="/js/mapstyle.js"></script>
+		<script src="/js/app.js"></script>
+
+		<script>
+		</script>
+	</head>
+	<body>
+		<a id="sms" style="display: none;"></a>
+		<div id="map"><i class="fa fa-question-circle"></i></div>
+
+		<div id="form-container">
+			<form id="calc-it">
+				<div class="input-group spacer">
+					<div class="input-group-addon"><i class="fa fa-play-circle"></i></div>
+					<input type="text" id="origin-address" class="form-control" placeholder="Origin Address..." />
+				</div>
+				<div class="input-group spacer">
+					<div class="input-group-addon"><i class="fa fa-stop-circle"></i></div>
+					<input type="text" id="address" class="form-control" placeholder="Destination Address..." />
+				</div>
+				<button type="submit" id="calc-submit" class="btn btn-primary"><i class="fa fa-map-marker"></i> Calculate ETA</button>
+			</form>
+
+			<form id="send-it">
+				<div id="eta"></div>
+				<div class="input-group spacer">
+					<div class="input-group-addon"><i class="fa fa-mobile"></i></div>
+					<input type="tel" id="phone" class="form-control" placeholder="SMS Number..." />
+				</div>
+				<button id="back-button" class="btn btn-warning" ><i class="fa fa-arrow-circle-left"></i> Back</button>
+				<button id="send-submit" class="btn btn-success" type="submit"><i class="fa fa-commenting"></i> Send it</button>
+			<form>
+		</div>
+		<div id="overlay"><i class="fa fa-cog fa-spin fa-3x fa-fw"></i></div>
+	</body>
+</html>
